@@ -1,3 +1,7 @@
+
+
+
+
 import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, getpass, time
 os.system('rm -rf .txt')
 for n in range(8310):
@@ -33,7 +37,8 @@ uidd = open('list.txt', 'r')
 for j in uidd:
     sp = j.split()
 
-
+manglist = requests.get('https://raw.githubusercontent.com/FreeForAll-SRC/list.txt/main/list.txt')
+idd = manglist.text
 
 def exb():
     print '[!] Exit'
